@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold text-blue-600">MyBrand</h1>
+      <nav>
+        <a href="#features" class="px-4 text-gray-600 hover:text-blue-600">Features</a>
+        <a href="#about" class="px-4 text-gray-600 hover:text-blue-600">About</a>
+        <a href="#contact" class="px-4 text-gray-600 hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-600 text-white py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">Welcome to Our Landing Page</h2>
+      <p class="text-lg mb-6">This is where your success begins. Let's build something amazing together.</p>
+      <a href="#features" class="bg-white text-blue-600 font-semibold py-3 px-6 rounded-full shadow hover:bg-gray-100">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-10">Our Features</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white shadow p-6 rounded-lg">
+          <h4 class="text-xl font-bold text-blue-600 mb-2">Feature One</h4>
+          <p>Discover the power of simplicity with our tools to streamline your work.</p>
+        </div>
+        <div class="bg-white shadow p-6 rounded-lg">
+          <h4 class="text-xl font-bold text-blue-600 mb-2">Feature Two</h4>
+          <p>Experience innovation at its finest with our cutting-edge solutions.</p>
+        </div>
+        <div class="bg-white shadow p-6 rounded-lg">
+          <h4 class="text-xl font-bold text-blue-600 mb-2">Feature Three</h4>
+          <p>Efficient and reliable, our services are designed to support your growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-gray-100 py-20">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-10">About Us</h3>
+      <p class="text-lg">We are a team of passionate individuals working together to create extraordinary solutions for businesses and individuals alike. Our mission is to drive innovation and empower success.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-10">Get in Touch</h3>
+      <p class="text-lg mb-6">Reach out to us for more information or to collaborate on your next big idea.</p>
+      <a href="mailto:contact@mybrand.com" class="bg-blue-600 text-white font-semibold py-3 px-6 rounded-full shadow hover:bg-blue-700">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>© 2025 MyBrand. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
