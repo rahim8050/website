@@ -1,79 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Solutions - Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
-<body class="bg-gray-100 text-gray-900">
-  <!-- Navbar -->
-  <header class="bg-white shadow">
-    <div class="container mx-auto flex justify-between items-center py-4 px-6">
-      <h1 class="text-2xl font-bold text-blue-600">MyBrand</h1>
-      <nav>
-        <a href="#features" class="px-4 text-gray-600 hover:text-blue-600">Features</a>
-        <a href="#about" class="px-4 text-gray-600 hover:text-blue-600">About</a>
-        <a href="#contact" class="px-4 text-gray-600 hover:text-blue-600">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="bg-blue-600 text-white py-20">
-    <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-4">Welcome to Our Landing Page</h2>
-      <p class="text-lg mb-6">This is where your success begins. Let's build something amazing together.</p>
-      <a href="#features" class="bg-white text-blue-600 font-semibold py-3 px-6 rounded-full shadow hover:bg-gray-100">Get Started</a>
-    </div>
-  </section>
-
-  <!-- Features Section -->
-  <section id="features" class="py-20">
-    <div class="container mx-auto text-center">
-      <h3 class="text-3xl font-bold mb-10">Our Features</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white shadow p-6 rounded-lg">
-          <h4 class="text-xl font-bold text-blue-600 mb-2">Feature One</h4>
-          <p>Discover the power of simplicity with our tools to streamline your work.</p>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-blue-600">NextGen</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-blue-600 transition">Features</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition">Testimonials</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-blue-600 transition">Pricing</a>
+                    <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+                        Get Started
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="bg-white shadow p-6 rounded-lg">
-          <h4 class="text-xl font-bold text-blue-600 mb-2">Feature Two</h4>
-          <p>Experience innovation at its finest with our cutting-edge solutions.</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-8">
+                    Transform Your Business with
+                    <span class="text-blue-600">AI-Powered</span> Solutions
+                </h1>
+                <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+                    Automate your workflow and boost productivity with our intelligent platform designed for modern enterprises.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg hover:bg-blue-700 transition">
+                        Start Free Trial
+                    </button>
+                    <button class="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg text-lg hover:border-blue-500 hover:text-blue-600 transition">
+                        Watch Demo
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="bg-white shadow p-6 rounded-lg">
-          <h4 class="text-xl font-bold text-blue-600 mb-2">Feature Three</h4>
-          <p>Efficient and reliable, our services are designed to support your growth.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Powerful Features
+                </h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Everything you need to manage, grow, and scale your business effectively
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-50 rounded-xl hover:bg-white hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg mb-4 flex items-center justify-center">
+                        <i class="fas fa-brain text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Smart Automation</h3>
+                    <p class="text-gray-600">AI-driven workflows that adapt to your business needs</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl hover:bg-white hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg mb-4 flex items-center justify-center">
+                        <i class="fas fa-chart-line text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Advanced Analytics</h3>
+                    <p class="text-gray-600">Real-time insights and predictive analytics dashboard</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-xl hover:bg-white hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg mb-4 flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Enterprise Security</h3>
+                    <p class="text-gray-600">Military-grade encryption and compliance standards</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="bg-gray-100 py-20">
-    <div class="container mx-auto text-center">
-      <h3 class="text-3xl font-bold mb-10">About Us</h3>
-      <p class="text-lg">We are a team of passionate individuals working together to create extraordinary solutions for businesses and individuals alike. Our mission is to drive innovation and empower success.</p>
-    </div>
-  </section>
+    <!-- Stats Section -->
+    <section class="py-20 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-4xl font-bold mb-2">150K+</div>
+                    <div class="text-gray-200">Active Users</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold mb-2">98%</div>
+                    <div class="text-gray-200">Customer Satisfaction</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold mb-2">24/7</div>
+                    <div class="text-gray-200">Support Availability</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-20">
-    <div class="container mx-auto text-center">
-      <h3 class="text-3xl font-bold mb-10">Get in Touch</h3>
-      <p class="text-lg mb-6">Reach out to us for more information or to collaborate on your next big idea.</p>
-      <a href="mailto:contact@mybrand.com" class="bg-blue-600 text-white font-semibold py-3 px-6 rounded-full shadow hover:bg-blue-700">Contact Us</a>
-    </div>
-  </section>
+    <!-- CTA Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-12 text-center">
+                <h2 class="text-3xl font-bold text-white mb-6">Ready to Get Started?</h2>
+                <p class="text-gray-200 mb-8 max-w-2xl mx-auto">
+                    Join thousands of companies already using NextGen to power their business operations
+                </p>
+                <button class="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">
+                    Start Your Free Trial
+                </button>
+            </div>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-6">
-    <div class="container mx-auto text-center">
-      <p>© 2025 MyBrand. All Rights Reserved.</p>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-white font-bold mb-4">NextGen</h4>
+                    <p class="text-sm">Leading the way in business automation solutions</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Product</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Features</a></li>
+                        <li><a href="#" class="hover:text-white transition">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white transition">Documentation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">About</a></li>
+                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Privacy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Terms</a></li>
+                        <li><a href="#" class="hover:text-white transition">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm">
+                <p>&copy; 2024 NextGen Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
-
 </html>
